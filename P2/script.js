@@ -1,25 +1,40 @@
+const root = document.getElementById("root");
+
 const loginForm = () => {
-    const str = `<div>
-    <h3>Login Form</h3>
-    <p><button onclick='showHome()'>Submit</button></p>
-    <p><button onclick='registerForm()'>Create Account</button></p>
-    `
-    root.innerHTML = str + "</div>"
-}
+  const str = `
+    <div class="card">
+      <h3>Login</h3>
+      <input type="text" placeholder="Email" class="input-box" /><br>
+      <input type="password" placeholder="Password" class="input-box" /><br>
+      <button onclick='showHome()'>Login</button>
+      <p>Don't have an account? <a href="#" onclick='registerForm()'>Register here</a></p>
+    </div>
+  `;
+  root.innerHTML = str;
+};
 
 const registerForm = () => {
-     const str = `<div>
-    <h3>Registration Form</h3>
-    <p><button onclick='loginForm()'>Submit</button></p>
-    <p><button onclick='loginForm()'>Already a member? Login here...</button></p>
-    `
-    root.innerHTML = str + "</div>"
-}
+  const str = `
+    <div class="card">
+      <h3>Create Account</h3>
+      <input type="text" placeholder="Full Name" class="input-box" /><br>
+      <input type="email" placeholder="Email" class="input-box" /><br>
+      <input type="password" placeholder="Password" class="input-box" /><br>
+      <input type="password" placeholder="Confirm Password" class="input-box" /><br>
+      <button onclick='loginForm()'>Register</button>
+      <p>Already have an account? <a href="#" onclick='loginForm()'>Login here</a></p>
+    </div>
+  `;
+  root.innerHTML = str;
+};
 
 const showHome = () => {
-     const str = `<div>
-    <h3>Welcome</h3>
-    <p><button onclick='loginForm()'>Logout</button></p>
-    `
-    root.innerHTML = str + "</div>"
-}
+  const str = `
+    <div class="card">
+      <h3>Welcome!</h3>
+      <p>You have successfully logged in.</p>
+      <button onclick='loginForm()'>Logout</button>
+    </div>
+  `;
+  root.innerHTML = str;
+};
