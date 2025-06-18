@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Tags</h1>
+    <!-- <form action="serverfile" method="post"></form> -->
+        <p>Name: <input type="text" required></p>
+     <fieldset>
+        <legend>Login Form</legend>
+        <form>
+        <!-- <p><input type="text" placeholder="Enter ur name" required autofocus maxlength="5"></p> -->
+            <!-- <p><input type="text" value="Sidduu" readonly disabled></p> -->
+                <p>Name: <input type="text" placeholder="Enter ur Name" required></p>
+                   <p>Email: <input type="email" placeholder="Enter ur gmail" required></p>
+                      <p>Password: <input type="password" placeholder="Enter password" required></p>
+                      <p>DOB: <input type="date"></p>
+                      <p>
+                        Age: <input type="number">
+                      </p>
+                      <p>
+                        <input type="checkbox">MERN Stack
+                        <input type="checkbox" checked>Java Full Stack
+                        <input type="checkbox">Python Full Stack
+                      </p>
+                      <p>
+                        <input type="radio" name="a">Morning
+                        <input type="radio" checked="a">Evening
+                      </p>
+                      <p>
+                        <select>
+                            <option>BE</option>
+                            <option selected>B-TECH</option>
+                            <option>MBA</option>
+                            <option>M-TECH</option>
+
+                        </select>
+                      </p>
+                      <p>
+                        <input type="file">
+                      </p>
+                      <p>
+                        <input type="color">
+                      </p>
+                      <p>
+                        <textarea rows="10" cols="60" placeholder="About me"></textarea>
+                      </p>
+                      <select>
+                        <optgroup label="India">
+                            <option>Banglore</option>
+                            <option>Hyderabad</option>
+                            <option>Chennai</option>
+                        </optgroup>
+                        <optgroup label="Australia">
+                            <option>Perth</option>
+                            <option>Brisbane</option>
+                            <option>Adelaide</option>
+                        </optgroup>
+                      </select>
+                      <p>
+                        <input list="country">
+                        <datalist id="country">
+                                <option>India</option>
+                                <option>USA</option>
+                                <option>Germany</option>
+                                <option>Australia</option>
+                        </datalist>
+                      </p>
+        <button type="submit">Submit</button>
+        <input type="reset">
+    </form>
+    </fieldset>
+    
+</body>
+</html>
