@@ -3,61 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidhartha Header</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>BALAGUNDLA SIDHARTHA - FULL STACK WEB DEVELOPER</title>
+    <style>
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #e0f7fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00796b, #26a69a); /* Teal gradient for header */
+            color: #ffffff;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            font-weight: 300; 
+            color: #000000; 
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex; 
+            justify-content: center; 
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff; /* White links */
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, color 0.3s ease; 
+            border-radius: 25px; 
+            border: 2px solid transparent; 
+        }
+
+        nav ul li a:hover {
+            background-color: #b2dfdb; 
+            color: #333; 
+            border: 2px solid #ffffff; 
+        }
+
+        section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffffff; 
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease; 
+        }
+
+        section:hover {
+            background-color: #f1f8e9; 
+        }
+
+        h2 {
+            color: #000000; 
+            font-size: 2em; 
+            margin-bottom: 15px;
+            position: relative; 
+        }
+
+        h2::after {
+            content: ''; 
+            display: block;
+            width: 50px; 
+            height: 3px; 
+            background: #26a69a; 
+            margin-top: 5px; 
+            border-radius: 2px; 
+        }
+
+        ul {
+            list-style-type: disc; 
+            margin-left: 20px;
+        }
+
+        article {
+            margin-bottom: 20px; 
+            padding: 15px;
+            border: 1px solid #00796b; 
+            border-radius: 10px;
+            background-color: #e0f2f1; 
+            transition: background-color 0.3s ease; 
+        }
+
+        article:hover {
+            background-color: #b2dfdb; 
+        }
+
+        a {
+            color: #00796b; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #004d40; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(135deg, #00796b, #26a69a); /* Same gradient as header */
+            color: #ffffff;
+            margin-top: 30px; 
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header h2 {
+                font-size: 1.3em;
+            }
+
+            nav ul {
+                flex-direction: column; 
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            section {
+                margin: 15px; 
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Sidhartha</h1>
-        </div>
-        <ul class="nav-links">
-            <li>Home</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Contacts</li>
-        </ul>
+        <h1 id="name"></h1>
+        <h2 id="title"></h2>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#personal-details">Personal Details</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="section">
-        <div class="text">
-            <h2>Mern Stack Developer</h2>
-            <p>
-                I'm a passionate MERN stack developer who loves building responsive and dynamic web applications.  
-                I enjoy turning complex problems into simple, beautiful solutions.  
-                With experience in MongoDB, Express.js, React, and Node.js, I strive to write clean and efficient code.  
-                I also stay updated with the latest technologies to deliver modern web experiences.  
-                Collaboration, creativity, and code quality drive my development journey.
-            </p>
-            <button class="view-btn">View My Projects</button>
-        </div>
-        <div class="intro-image">
-            <img src = "image\working engineer.avif" alt = "Virat Image">
-
-
-        </div>
-    </section>
-    </section>
-    <h1>Services</h1>
-    <section class="frontend-developer">
-   <div class="developer-sections">
-    <section class="frontend-developer">
-        <h2>Frontend Developer</h2>
-        <p>Frontend developers focus on creating visually appealing and user-friendly interfaces using HTML, CSS, and JavaScript. They ensure websites work across all devices and browsers.</p>
-    </section>
-    
-    <section class="backend-developer">
-        <h2>Backend Developer</h2>
-        <p>Backend developers handle the server-side logic, databases, and APIs. They ensure smooth data flow and integration between frontend and backend systems.</p>
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>I am an enthusiastic Full Stack Web Developer seeking my first professional experience. Eager to contribute to innovative projects and grow my learning with a collaborative team.</p>
     </section>
 
-    <section class="mobile-developer">
-        <h2>Mobile App Developer</h2>
-        <p>Mobile developers build Android and iOS apps using tools like React Native or Flutter. They ensure smooth, responsive mobile experiences for users.</p>
+    <section id="personal-details">
+        <h2>Personal Details</h2>
+        <p><strong>Phone:</strong> +917702658706</p>
+        <p><strong>Email:</strong> <a href="mailto:balagundlasidhartha@email.com">balagundlasidhartha@email.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/balagundla-sidhartha/">Visit my profile</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Sidharthasiddu">Check my repositories</a></p>
     </section>
-</div>
 
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>B.Tech (CSE) - Lovely Professional University (2022-2026)</li>
+            <li>Higher Secondary Education - Sri Chaitanya College Of Education (Vijayawada, Andhra Pradesh)</li>
+            <li>Elementary Education - Jeevananda English Medium High School (Dharmavaram, Andhra Pradesh)</li>
+        </ul>
+    </section>
 
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>React.js</li>
+            <li>MongoDB</li>
+            <li>Bootstrap</li>
+            <li>jQuery</li>
+            <li>C Programming</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <article>
+            <h3>Prema Ananda Spiritual Society Website</h3>
+            <p>A responsive webpage developed for the NGO.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="link-to-your-project">View Project</a>
+        </article>
+        <article>
+            <h3>Prakash Organic Store</h3>
+            <p>A responsive website developed for an organic store.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Bootstrap </p>
+            <a href="link-to-your-project">View Project</a>
+        </article>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>HTML, CSS, and JavaScript for Web Developers (Johns Hopkins University) - Coursera</li>
+            <li>Server-Side JavaScript with Node.js (NIIT) - Coursera</li>
+            <li>Static Routing Configuration Using Packet Tracer - Coursera</li>
+            <li>Introduction to Generative AI - Coursera</li>
+            <li>C++ with DSA - Udemy</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BALAGUNDLA SIDHARTHA. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to dynamically set name and title
+        document.getElementById('name').textContent = 'BALAGUNDLA SIDHARTHA';
+        document.getElementById('title').textContent = 'Full Stack Web Developer';
+    </script>
 </body>
 </html>
