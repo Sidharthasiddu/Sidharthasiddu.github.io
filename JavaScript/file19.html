@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let user = {}
+        let users = []
+        const addUser = () =>{
+            users.push({...user});
+            console.log(users);
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend> <h1>Registration form</h1></legend>
+    <form>
+       <p><input type="text" placeholder="Enter ur name" onchange="user.name = event.target.value"></p>
+       <p><input type="email" placeholder="Enter ur email" onchange="user.email = event.target.value"></p>
+       <p><input type="password" placeholder="Enter ur password" onchange="user.password = event.target.value"></p>
+       <button onclick="addUser()">Add user</button>
+    </form>
+    </fieldset>
+    
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let user = {};
+      let users = [];
+      const addUser = () => {
+        users.push({...user});
+        console.log(users);
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>
+      <input
+        type="text"
+        placeholder="Enter Name"
+        onchange="user.name=event.target.value"
+      />
+    </p>
+    <p><input type="text" placeholder="Enter Email"  onchange="user.email=event.target.value" /></p>
+    <p><input type="password" placeholder="New Password"  onchange="user.pass=event.target.value"/></p>
+    <button onclick="addUser()">Submit</button>
+  </body>
+</html>
