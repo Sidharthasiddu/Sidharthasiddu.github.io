@@ -131,7 +131,7 @@ db.employees.find({salary:{$ne:3000}},{name:1})
 //   }
 // ]
 
- db.employees.find({
+ db.employees.find({  // find returns array of objects,and findone returns only one object
    $and: [
      { salary: { $gt: 3000 } },
      { department: { $eq: "IT" } }
@@ -151,13 +151,12 @@ db.employees.find({salary:{$ne:3000}},{name:1})
 // ]
 
 
- db.employees.find({
-...   $or: [
-...     { salary: { $gt: 3000 } },
-...     { department: { $eq: "IT" } }
-...   ]
-... })
-...
+ db.employees.find({  $or: [
+   { salary: { $gt: 3000 } },
+   { department: { $eq: "IT" } }
+ ]
+ })
+
 
 
 // [
