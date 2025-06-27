@@ -4,22 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: hsl(0, 0%, 98%);
+            margin: 0;
+            padding: 0;
+           
+        }
+        header{
+            background-color:  rgba(130, 187, 164, 0.903);
+            padding: 6px 30px 0 20px;
+            border: 3px solid black;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-family: Copperplate, Papyrus, fantasy;
+        }
+        #Portfolio a{
+            color: black;
+            font-weight: bold;
+           text-decoration: none;
+        }
+        #main{
+            border: 3px solid black;
+            border-radius: 30px;
+            padding: 30px 30px 30px 30px;
+            background-color:  rgb(128, 114, 85);
+            
+            /* display: flex;
+            justify-content: space-between; */
+        }
+        #projects{
+            border: 2px solid rgb(11, 11, 11);
+            border-radius: 50px;
+            padding :60px 430px 60px 100px;
+            align-items: center;
+            background-color: rgb(202, 196, 184);
+            font-family: Copperplate, Papyrus, fantasy;
+        }
+        #Assignments{
+            border: 2px solid rgb(11, 11, 11);
+            border-radius: 50px;
+            padding :60px 430px 60px 100px;
+            align-items: center;
+            background-color: rgb(202, 196, 184);
+              font-family: Copperplate, Papyrus, fantasy;
+        }
+        #myfolders{
+            /* display: grid; */
+            border: 2px solid rgb(11, 11, 11);
+            border-radius: 50px;
+            padding :0px 250px 60px 100px;
+            align-items: center;
+            background-color: rgb(202, 196, 184);
+              font-family: Copperplate, Papyrus, fantasy;
+        }
+        #myfolders:hover{
+            background-color:lightgray;
+                transform: translateY(-7px);
+            transition-duration: 0.5s;
+         
+        }
+        #container{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 0px 35px 0px;
+            gap:20px;
+        }
+        .p1 a{
+            text-decoration: none;
+            color:black
+        }
+        #projects:hover{
+            background-color: lightgray;
+            transform: translateY(-7px);
+            transition-duration: 0.5s;
+            
+        }
+        #Assignments:hover{
+            background-color: lightgray;
+                transform: translateY(-7px);
+            transition-duration: 0.5s;
+        }
+    </style>
 </head>
 <body>
-    <h1>Sidhartha</h1>
-    
-        <h2><a href="Portfolio/index.html">My Portfolio</a></h2>
+    <header>
 
-    <h2><b>My Projects: </b></h2>
-       <a href="P1/index.html">1. Project 1</a> 
-        <p>2.Project 2</p>
-   
-    <h2><b>My Assignments:</b></h2>
-       <p>1.Assignment 1</p> 
-       <p>2.Assignment 2</p>
-     <h2>My Folders</h2>
-             <h4><a href="HTML/Introductiontohtml.html">HTML</a></h4>
-        <h4><a href="CSS/index.html">CSS</a></h4>
-        <h4><a href="JavaScript/index.html">JavaScript</a></h4>
-</body>
+        <div>
+            <h1>Sidhartha</h1>
+        </div>
+        <h2 id="Portfolio"><a href="Portfolio/index.html" target="_blank">My Portfolio</a></h2>  
+    </header>
+      
+
+    <div id="main">
+
+        <div id="container">
+            <div id="projects">
+                <h2><b>My Projects: </b></h2>
+                   <p class="p1"><a href="P1/index.html">1. Project 1</a></p>
+                    <p>2.Project 2</p>
+            </div>
+            <div id="Assignments">
+                <h2><b>My Assignments:</b></h2>
+                   <p>1.Assignment 1</p>
+                   <p>2.Assignment 2</p>
+            </div>
+        </div>
+        <div id="myfolders">
+             <h2>My Folders</h2>
+                     <p class="p1"><a href="HTML/Introductiontohtml.html">HTML</a></p>
+                <p class="p1"><a href="CSS/index.html">CSS</a></p>
+                <p class="p1"><a href="JavaScript/index.html">JavaScript</a></p>
+                 </div>
+         
+    </div>
+    
+        
+             </body>
+         
 </html>
